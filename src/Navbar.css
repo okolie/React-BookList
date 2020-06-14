@@ -1,0 +1,123 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(92, 10, 92);
+}
+#root {
+	width: 80vw;
+	margin: 0 auto;
+	margin: 0 auto;
+	font-size: 0.8rem;
+	color: white;
+	background-color: rgb(46, 3, 46);
+}
+.navbar {
+	width: 80vw;
+	background-color: purple;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px 0;
+	margin-top: 20px;
+	z-index: 100;
+}
+
+.book ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.booklist {
+	margin: 10px 0;
+	text-align: left;
+	text-transform: capitalize;
+	letter-spacing: 0.05rem;
+	background-color: purple;
+	width: 70vw;
+	cursor: pointer;
+	padding-left: 10px;
+}
+
+.booklist div {
+	padding: 0.2rem;
+}
+.booklist span {
+	text-transform: capitalize;
+}
+
+.booklist:hover {
+	opacity: 0.7;
+	transform: scale(1.1);
+	text-decoration: line-through;
+}
+.booklist .author {
+	font-size: 0.9rem;
+}
+
+.booklist .title {
+	font-size: 1.2rem;
+	font-weight: bolder;
+	letter-spacing: 0.15rem;
+}
+form {
+	padding: 20px;
+	width: 70vw;
+	margin: auto;
+}
+label,
+input {
+	display: block;
+	/* border: 2px solid red; */
+	margin-bottom: 10px;
+	padding: 5px;
+}
+input {
+	width: 100%;
+	cursor: pointer;
+}
+label {
+	font-size: 1rem;
+	background-color: purple;
+	font-weight: bolder;
+}
+input::placeholder {
+	font-size: 0.8rem;
+	color: black;
+}
+input[type="submit"] {
+	background-color: purple;
+	color: white;
+	outline: none;
+	border: none;
+	padding: 10px 0;
+	font-size: 0.8rem;
+}
+input[type="submit"]:hover {
+	transform: scale(1.1);
+}
+
+input[type="text"]:focus {
+	border: none;
+	/* outline: purple; */
+	/* padding: 11px; */
+}
+
+input[type="text"] {
+	font-size: 1rem;
+}
+
+.empty {
+	text-align: center;
+	padding-top: 10px;
+}
